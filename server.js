@@ -8,7 +8,7 @@ const routes = require('./src/routes');
 
 const app = express();
 const port = process.env.PORT ||  5000;
-const url_mongo = process.env.URL ||  "mongodb://192.168.1.111:27017/desafio-uizzy"
+const url_mongo = process.env.URL ||  "mongodb://192.168.1.108:27017/desafio-uizzy"
 
 mongoose.connect(url_mongo, {
   useUnifiedTopology:true,
