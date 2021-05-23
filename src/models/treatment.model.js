@@ -6,7 +6,7 @@ const AttachmentSchema = new mongoose.Schema({
   attach_id: String, // with this id we talk with resource server.
 });
 
-const Procedures = new mongoose.Schema({
+const ProceduresSchema = new mongoose.Schema({
   procedure_name:String,
   procedure_date:String,
   procedure_description:String,
@@ -17,7 +17,7 @@ const Procedures = new mongoose.Schema({
 
 
 const DataSchema = new mongoose.Schema({
-  treatment_procedures:[Procedures],
+  treatment_procedures:[ProceduresSchema],
 },{
   timestamps:true
 });
