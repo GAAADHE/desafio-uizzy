@@ -22,9 +22,9 @@ routes.put('/api/treatments/', Treatment.update);
 // procedures
 
 routes.get('/api/procedures', Procedure.index);
-routes.post('/api/procedures/:_id_treatment',Procedure.create);
-routes.get('/api/procedures.details/:_id_treatment/:_id', Procedure.details);
-routes.delete('/api/procedures/:_id_treatment/:_id', Procedure.delete);
-routes.put('/api/procedures/:_id_treatment/:_id', Procedure.update);
+routes.post('/api/procedures/',Procedure.create);
+routes.get('/api/procedures.details/:_id', Procedure.details);
+routes.delete('/api/procedures/:_id', Procedure.delete);
+routes.put('/api/procedures/:_id', Procedure.update);
 
 module.exports = routes
