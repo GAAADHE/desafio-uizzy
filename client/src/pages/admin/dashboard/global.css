@@ -1,0 +1,60 @@
+
+/*Colors Site*/
+.site-layout-background {
+  /*background: #FCFCFC;*/
+  background: #FCFCFC;
+}
+.site-content-layout-background{
+  background: #FFFFFF;
+}
+
+/*--- Main menu ---*/
+#MenuColumn > .logout{
+  color: #BDC4C8;
+  font-family: 'Europa Regular', Arial;
+}
+
+#MainMenu a:link, #MainMenu a:visited {
+  color: #BDC4C8;
+  font-family: 'Europa Regular', Arial;
+}
+#MainMenu a.selected{
+  color:#314654;
+}
+#MenuColumn > .user_initial{
+  color: #6E8CA0;
+  font-family: 'Europa Regular', Arial;
+}
+
+/*--- End main menu ---*/
+
+/* Patiente Profile*/
+.title_page{
+  color: #314654;
+  font-family: 'Europa Regular', Arial;
+}
+
+.menu_actions_profile a:visited, .menu_actions_profile a:link{
+  color: #BDC4C8;
+}
+/*--- Patient informations ---*/
+
+.patient_informations > .patient_name_title{
+  font-family: 'Montserrat Regular', Arial;
+  color: #6E7D87;
+}
+
+.patient_informations > .since_year{
+  font-family: 'Montserrat Regular', Arial;
+  color: #6E7D87;
+}
+
+.patient_informations > .petient_pessoal_informations{
+  font-family: 'Europa Regular', Arial;
+  color: #949fa7;
+}
+
+.patient_informations > .petient_pessoal_informations .constrast-text{
+  color: #6E7D87;
+}
+/*--- End Patient informations ---*/

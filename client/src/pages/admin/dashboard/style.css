@@ -1,0 +1,178 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#layout-base{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 118px 456px auto;
+}
+/* Menu Left*/
+#MenuColumn{
+  height: 728px;
+  width: 118px;
+  grid-column: 1/2;
+  margin-top: 19px;
+  display: grid;
+  grid-template-rows: 134px auto auto;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 1;
+}
+.small_profile_pic_container{
+  height: 96px;
+  width: 74px;
+  display: grid;
+  justify-self: center;
+  margin-top: 38px;
+}
+.small_profile_pic{
+  border-radius: 50px;
+  display: relative;
+  height:72px;
+  width: 72px;
+  justify-self: center;
+  align-self: center;
+
+  background-color: #314654;
+
+}
+.user_initial{
+  justify-self: center;
+  margin-top: 0px;
+}
+/*--- Main Menu icons ---*/
+#MainMenu{
+  height: 392px;
+}
+#MainMenu a{
+  display: grid;
+  margin-top: 18px;
+  height: 100%;
+  width: 100%;
+}
+#MainMenu a:link, #MainMenu a:visited {
+
+  text-decoration: none;
+  text-align: center;
+}
+#MainMenu a > .menu_name{
+  align-self: start;
+  font-size: 12px;
+}
+#MainMenu > ul{
+  list-style: none;
+  padding: 0px;
+  height: 100%;
+  display: grid;
+}
+
+#MainMenu svg{
+  justify-self: center;
+  align-self: end;
+}
+
+/*--- SignOut ---*/
+#MenuColumn >.logout {
+  display: grid;
+  height: 34px;
+  width: 100%;
+  margin-bottom: 16px;
+  align-self: end;
+  justify-content: center;
+}
+#MenuColumn > .logout svg{
+  font-size: 15px;
+  justify-self: center;  
+}
+
+/*--- Menu Left End ---*/
+
+/*--- Content Area ---*/
+
+#ContentArea{
+  display: grid;
+  grid-column: 2/4;
+  padding-top: 10px;
+  grid-template-columns: 456px auto;
+}
+/*--- Patient Profile Header  ---*/
+#profile_header{
+  display: grid;
+  grid-template-rows: 100px 216px auto;
+}
+
+.avatar_profile_big{
+  height: 216px;
+  width: 216px;
+  border-radius: 50%;
+  background: #314654;
+  justify-self: center;
+}
+
+.menu_actions_profile{
+  width: 456px;
+  height: 78px;
+  padding: 0px;
+  display:grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-content: center;
+
+  box-shadow: 0px 3px 6px #00000017;
+  border-radius: 22px;
+}
+.menu_actions_profile > li{
+  height: 90px;
+  width: 90px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.menu_actions_profile {list-style: none;}
+.menu_actions_profile a{ height: 100%; width: 100%;}
+.menu_actions_profile a:visited, .menu_actions_profile a:link{
+  text-decoration: none;
+}
+.menu_actions_profile svg{
+  font-size: 22px;
+}
+
+/*--- End Patient Profile Header ---*/
+/*--- Patient informations ---------*/
+.patient_informations {
+  width: 456px;
+  height: 312px;
+  display: grid;
+  grid-column: 1/2;
+  grid-template-rows: 48px 38px auto;
+
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+}
+.patient_informations > .patient_name_title{
+  grid-row: 1/2;
+  align-self: end;
+  justify-self: center;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.patient_informations > .since_year{
+  grid-row: 2/3;
+  align-self: start;
+  justify-self: center;
+  font-size: 14px;
+}
+.patient_informations > .petient_pessoal_informations{
+  display: grid;
+  font-size: 14px;
+}
+/*--- Patient informations End -----*/
+/*--- Tabs -------------------------*/
+.tabs_container{
+  
+}
