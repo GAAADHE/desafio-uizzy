@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import Tab from './Tab';
 import './Tabs.css';
 import { useState } from 'react';
+
+import PatientTimeline from './PatientTimeline';
+import PatientMedias from './PatientMedias';
+import PatientAttachments from './PatientAttachments';
+import PatientTreatments from './PatientTreatments';
 
 
 export default function Tabs(){
   const [toggleState, setToggleState] = useState(1);
+
   const toggleTab = (index) => {
     setToggleState(index);
   }
@@ -14,63 +19,56 @@ export default function Tabs(){
   return (
     <div className="tabs-container">
       <div className="tabs-menu">
+
         <button
-          className={toggleState === 1 ? "tab active-tab" : "tab"}
-          onClick={() => toggleTab(1)}
-        >
-          Tab 1
+            className={toggleState === 1 ? "tab active-tab" : "tab"}
+            onClick={() => toggleTab(1)}
+          >
+          Timeline
         </button>
         <button
           className={toggleState === 2 ? "tab active-tab" : "tab"}
           onClick={() => toggleTab(2)}
         >
-          Tab 2
+          Treatments
         </button>
         <button
           className={toggleState === 3 ? "tab active-tab" : "tab"}
           onClick={() => toggleTab(3)}
         >
-          Tab 3
+          Midias
+        </button>
+        <button
+          className={toggleState === 4 ? "tab active-tab" : "tab"}
+          onClick={() => toggleTab(4)}
+        >
+          Attachments
         </button>
       </div>
 
       <div className="content-tabs">
         <div
-          className={toggleState === 1 ? "tab-content  active-tab-content" : "tab-content"}
-        >
-          <h2>Content 1</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
+            className={toggleState === 1 ? "tab-content  active-tab-content" : "tab-content"}
+          >
+          <PatientTimeline/>
         </div>
 
         <div
           className={toggleState === 2 ? "tab-content  active-tab-content" : "tab-content"}
         >
-          <h2>Content 2</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
+          <PatientTreatments/>
         </div>
 
         <div
           className={toggleState === 3 ? "tab-content  active-tab-content" : "tab-content"}
         >
-          <h2>Content 3</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
+          <PatientMedias/>
+        </div>
+
+        <div
+          className={toggleState === 4 ? "tab-content  active-tab-content" : "tab-content"}
+        >
+          <PatientAttachments/>
         </div>
       </div>
     </div>    

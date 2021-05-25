@@ -1,8 +1,10 @@
-export default function (){
+const LogOut = function (){
   return (
-    <a class="logout">
-      <i class="fas fa-sign-out-alt"></i>
-      <div class="menu_name">LogOut</div>
+    <a className="logout">
+      <i className="fas fa-sign-out-alt"></i>
+      <div className="menu_name">Logout</div>
     </a>
   );
 }
+
+export default LogOut;

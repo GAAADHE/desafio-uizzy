@@ -1,3 +1,20 @@
+/*Buttons*/
+
+button.btn-default {
+  color: white;
+  background: #6E8CA0;
+  font-family: 'Europa Regular', Arial;
+}
+button.btn-default:hover {
+  background-color: #314654;
+}
+
+/*--- Search default ---*/
+input.input-search-default{
+  border: 1px solid #bdc4c8;
+  color: #6E8CA0;
+  font-family: 'Europa Regular', Arial;
+}
 
 /*Colors Site*/
 .site-layout-background {

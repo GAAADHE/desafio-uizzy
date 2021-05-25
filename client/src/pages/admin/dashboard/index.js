@@ -20,8 +20,10 @@ export default function Dashboard(){
     <Layout>
       <MenuColumn/>
       <ContentArea>
-       <MenuPatient/>
-       <PatientInfo/>
+        <div className="profile-column">
+         <MenuPatient/>
+         <PatientInfo/>
+        </div>
        <TabsArea/>
       </ContentArea>
     </Layout>

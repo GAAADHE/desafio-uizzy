@@ -1,20 +1,20 @@
 export default function (){
   return (
-    <ul class="menu_actions_profile">
+    <ul className="menu_actions_profile">
       <li><a href="">
-        <i class="fas fa-pencil-alt"></i>  
+        <i className="fas fa-pencil-alt"></i>  
       </a></li>
       <li><a href="">
-        <i class="fas fa-file-medical"></i> 
+        <i className="fas fa-file-medical"></i> 
       </a></li>
       <li><a href="">
-        <i class="fas fa-camera"></i> 
+        <i className="fas fa-camera"></i> 
       </a></li>
       <li><a href="">
-        <i class="fas fa-microphone-alt"></i>
+        <i className="fas fa-microphone-alt"></i>
       </a></li>
       <li><a href="">
-        <i class="fas fa-upload"></i> 
+        <i className="fas fa-upload"></i> 
       </a></li>
     </ul>);
 }

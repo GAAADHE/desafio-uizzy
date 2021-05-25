@@ -2,7 +2,14 @@ body{
   margin: 0px;
   padding: 0px;
 }
+/*Buttons*/
 
+button.btn-default {
+  border-radius: 10px;
+  border-style: none;
+}
+
+/*Layout*/
 #layout-base{
   display: grid;
   grid-gap: 20px;
@@ -101,11 +108,17 @@ body{
   grid-template-columns: 456px auto;
 }
 /*--- Patient Profile Header  ---*/
+.profile-column{
+  display: grid;
+}
 #profile_header{
   display: grid;
-  grid-template-rows: 100px 216px auto;
+  grid-template-rows: 100px 216px 78px;
 }
-
+.title_page{
+  margin: 0px;
+  align-self: center;
+}
 .avatar_profile_big{
   width: 216px;
   height: 216px;
@@ -120,6 +133,7 @@ body{
   width: 456px;
   height: 78px;
   padding: 0px;
+  margin: 0px;
   display:grid;
   grid-template-columns: repeat(5, auto);
   justify-content: center;
@@ -174,4 +188,36 @@ body{
   display: grid;
   font-size: 14px;
 }
-/*--- Patient informations End -----*/
+/*--- End of Patient informations -----*/
+/*--- Profile treatment plans ---------*/
+/*Search*/
+.patient-treatment-tool-bar{
+  height: 34px;
+  width: 100%;
+  display: grid;
+  grid-gap: 22px;
+  grid-template-columns: 140px auto;
+}
+button#create-new-treatment{
+  width: 140px;
+  height: 34px;
+}
+
+.patient-search-container{
+  width: 100%;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
+input.input-search-default{
+  border-radius: 10px 1px 0px 10px;
+  text-indent: 10px;
+}
+
+button.btn-search {
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/*--- End of Profile treatment plans ---*/
