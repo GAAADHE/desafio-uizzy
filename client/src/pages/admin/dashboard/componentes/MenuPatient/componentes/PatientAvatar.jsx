@@ -1,4 +1,6 @@
+import foto from '../../../../../../assets/photo-1438761681033-6461ffad8d80.webp';
 export default function (){
-  return (<div class="avatar_profile_big"> 
-  </div>);
+  return (
+    <img src={foto} class="avatar_profile_big"/>
+  );
 }

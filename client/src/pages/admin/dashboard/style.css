@@ -97,6 +97,7 @@ body{
   display: grid;
   grid-column: 2/4;
   padding-top: 10px;
+  grid-gap: 20px;
   grid-template-columns: 456px auto;
 }
 /*--- Patient Profile Header  ---*/
@@ -106,10 +107,12 @@ body{
 }
 
 .avatar_profile_big{
-  height: 216px;
   width: 216px;
+  height: 216px;
+  object-fit: cover;
+  object-position: 53% 0px;
   border-radius: 50%;
-  background: #314654;
+  /*background: #314654;*/
   justify-self: center;
 }
 
@@ -172,7 +175,3 @@ body{
   font-size: 14px;
 }
 /*--- Patient informations End -----*/
-/*--- Tabs -------------------------*/
-.tabs_container{
-  
-}

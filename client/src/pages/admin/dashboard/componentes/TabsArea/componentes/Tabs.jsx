@@ -1,21 +1,78 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Tab from './Tab';
+// import Tab from './Tab';
+import './Tabs.css';
+import { useState } from 'react';
 
-class Tabs extends Component {
-  static propTypes = {
-    children: PropTypes.instanceOf(Array).isRequired,
+
+export default function Tabs(){
+  const [toggleState, setToggleState] = useState(1);
+  const toggleTab = (index) => {
+    setToggleState(index);
   }
 
-  constructor(props) {
-    super(props);
+  return (
+    <div className="tabs-container">
+      <div className="tabs-menu">
+        <button
+          className={toggleState === 1 ? "tab active-tab" : "tab"}
+          onClick={() => toggleTab(1)}
+        >
+          Tab 1
+        </button>
+        <button
+          className={toggleState === 2 ? "tab active-tab" : "tab"}
+          onClick={() => toggleTab(2)}
+        >
+          Tab 2
+        </button>
+        <button
+          className={toggleState === 3 ? "tab active-tab" : "tab"}
+          onClick={() => toggleTab(3)}
+        >
+          Tab 3
+        </button>
+      </div>
 
-    this.state = {
-      activeTab: this.props.children[0].props.label,
-    };
-  }
+      <div className="content-tabs">
+        <div
+          className={toggleState === 1 ? "tab-content  active-tab-content" : "tab-content"}
+        >
+          <h2>Content 1</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
+            vel voluptatum?
+          </p>
+        </div>
 
-  onClickTabItem = (tab) => {
-    this.setState({ activeTab: tab });
-  }
+        <div
+          className={toggleState === 2 ? "tab-content  active-tab-content" : "tab-content"}
+        >
+          <h2>Content 2</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            voluptatum qui adipisci.
+          </p>
+        </div>
+
+        <div
+          className={toggleState === 3 ? "tab-content  active-tab-content" : "tab-content"}
+        >
+          <h2>Content 3</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
+            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
+            Accusamus in quia odit aspernatur provident et ad vel distinctio
+            recusandae totam quidem repudiandae omnis veritatis nostrum
+            laboriosam architecto optio rem, dignissimos voluptatum beatae
+            aperiam voluptatem atque. Beatae rerum dolores sunt.
+          </p>
+        </div>
+      </div>
+    </div>    
+  );
 }
