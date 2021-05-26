@@ -10,6 +10,9 @@ import TabsArea from './componentes/TabsArea';
 import '@fortawesome/fontawesome-free/js/all.js';
 import './global.css';
 import './style.css';
+
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 //import 'antd/dist/antd.css'
 
 //import ReactDOM from 'react-dom';
@@ -20,11 +23,11 @@ export default function Dashboard(){
     <Layout>
       <MenuColumn/>
       <ContentArea>
-        <div className="profile-column">
-         <MenuPatient/>
-         <PatientInfo/>
-        </div>
-       <TabsArea/>
+            <div className="profile-column">
+            <MenuPatient/>
+            <PatientInfo/>
+            </div>
+            <TabsArea/>
       </ContentArea>
     </Layout>
   );

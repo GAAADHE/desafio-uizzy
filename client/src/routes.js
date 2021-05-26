@@ -14,7 +14,7 @@ export default function Routes(){
       {/* Route public*/}
         <Route path="/" exact component={Home} />
       {/* Route Admin*/}
-        <Route path="/dashboard" exact component={Dashboard}/>
+        <Route path="/dashboard" component={Dashboard}/>
       </Switch>
     </BrowserRouter>
   );

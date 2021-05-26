@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 const MainMenu = function (){
   return (<nav id="MainMenu">
   <ul>
-      <li><a href="">
+      <li><Link to="/">
         <i className="fas fa-home"></i>
-        <div className="menu_name">Home</div></a>
+        <div className="menu_name">Home</div></Link>
       </li>
       <li><a href="">
         <i className="fas fa-users"></i>

@@ -23,11 +23,6 @@ button.btn-default {
   margin-top: 19px;
   display: grid;
   grid-template-rows: 134px auto auto;
-
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 0px 10px 10px 0px;
-  opacity: 1;
 }
 .small_profile_pic_container{
   height: 96px;
