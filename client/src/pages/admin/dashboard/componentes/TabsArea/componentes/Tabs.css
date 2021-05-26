@@ -1,8 +1,10 @@
 /*--- Tabs -------------------------*/
 .tabs-container{
-  width: 100%;
+  
   min-height: 643px;
   margin-top: 98px;
+  margin-right: 62px;
+
   grid-column: 2/4;
   grid-row: 1/2;
   display:grid;

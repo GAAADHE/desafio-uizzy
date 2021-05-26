@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 const LogOut = function (){
   return (
-    <a className="logout">
+    <Link className="logout">
       <i className="fas fa-sign-out-alt"></i>
       <div className="menu_name">Logout</div>
-    </a>
+    </Link>
   );
 }
 

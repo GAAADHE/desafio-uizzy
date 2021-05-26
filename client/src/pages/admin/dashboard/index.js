@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 import './global.css';
 import './style.css';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 //import 'antd/dist/antd.css'
 
@@ -23,11 +23,13 @@ export default function Dashboard(){
     <Layout>
       <MenuColumn/>
       <ContentArea>
+        <Route path="/dashboard/patients">
             <div className="profile-column">
             <MenuPatient/>
             <PatientInfo/>
             </div>
             <TabsArea/>
+        </Route>
       </ContentArea>
     </Layout>
   );
